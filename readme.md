@@ -8,6 +8,8 @@ Binance utilizes smart contracts with their BNB Smart Chain to facilitate the bu
 
 BNB transactions largely operate with on-chain logic, where transactions are recorded on the BNB chain and executed by smart contracts directly on the chain. This follows from the fact that BNB is the native currency on the Binance Exchange, powering transactions and paying for fees.
 
+### Token Sending:
+
 BNB can be interacted with through smart contracts that allow many transactions to occur, providing many benefits to users. I coded a small example of a smart contract through Solidity of transfering tokens, which can be used for transfering BNB, Ether, and other currencies across accounts. 
 
 ```
@@ -40,3 +42,10 @@ contract tokenSend {
 ```
 
 In this example, you can call the `sendToken` function, inputting a recipient's address, to send a specified `msg.value` amount of currency to a chosen recipient. 
+
+### BNB Burning:
+
+Another large token interaction example with the BNB token is the auto-burning feature. In order to ensure that a finite amount of BNB is in circulation and to avoid BNB inflation, BNB is periodically burned. This happens in two main ways:
+
+1. Burning a portion of gas fees spent with BNB on the BNB Chain
+2. Quarterly BNB burning events
