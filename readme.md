@@ -10,6 +10,8 @@ BNB transactions largely operate with on-chain logic, where transactions are rec
 
 BNB can be interacted with through smart contracts that allow many transactions to occur, providing many benefits to users. I coded a small example of a smart contract through Solidity of transfering tokens, which can be used for transfering BNB, Ether, and more across accounts. 
 
+<code style="color : blue">text</code>
+
 ```
 // SPDX-License-Identifier: GPL-3.0
 pragma solidity >=0.7.0 <0.9.0;
@@ -34,6 +36,7 @@ contract tokenSend {
 
         // Log the transfer
         emit CurrencySent(msg.sender, receiver, msg.value);
+        <code style="color : blue">text</code>
 
         }
 }
