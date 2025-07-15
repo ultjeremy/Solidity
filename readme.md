@@ -8,9 +8,7 @@ Binance utilizes smart contracts with their BNB Smart Chain to facilitate the bu
 
 BNB transactions largely operate with on-chain logic, where transactions are recorded on the BNB chain and executed by smart contracts directly on the chain. This follows from the fact that BNB is the native currency on the Binance Exchange, powering transactions and paying for fees.
 
-BNB can be interacted with through smart contracts that allow many transactions to occur, providing many benefits to users. I coded a small example of a smart contract through Solidity of transfering tokens, which can be used for transfering BNB, Ether, and more across accounts. 
-
-<code style="color : blue">hello there</code>
+BNB can be interacted with through smart contracts that allow many transactions to occur, providing many benefits to users. I coded a small example of a smart contract through Solidity of transfering tokens, which can be used for transfering BNB, Ether, and other currencies across accounts. 
 
 ```
 // SPDX-License-Identifier: GPL-3.0
@@ -24,7 +22,7 @@ contract tokenSend {
     // Sender does not have enough currency to send amount
     error NotEnoughCurrency(uint amount);
     
-    // Function that transferes payment from the caller to a receiver
+    // Function that transfers payment from the caller to a receiver
     function sendToken(address payable receiver) external payable {
         
         // Ensure that the sender sends more than nothing
@@ -40,3 +38,5 @@ contract tokenSend {
         }
 }
 ```
+
+In this example, you can call the `sendToken` function, inputting a recipient's address, to send a specified `msg.value` amount of currency to a chosen recipient. 
