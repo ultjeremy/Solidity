@@ -41,7 +41,7 @@ contract tokenSend {
 }
 ```
 
-In this example, you can call the `sendToken` function, inputting a recipient's address, to send a specified `msg.value` amount of currency to a chosen recipient. 
+In this example, you can call the `sendToken` function, inputting a recipient's address, to send a specified `msg.value` amount of currency to a chosen recipient. I implemented this in Remix as a smart contract, using Solidity.
 
 ### BNB Burning:
 
@@ -62,3 +62,5 @@ function burn(uint256 _value) returns (bool success) {
         return true;
     }
 ```
+
+In this example, a `burn` function can be called that removes an inputted amount of BNB from the caller's account, updating the total supply and returning whether the operation was successful or not. This is again implemented with Solidity as a smart contract.
