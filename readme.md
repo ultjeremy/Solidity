@@ -50,11 +50,11 @@ Another large token interaction example with the BNB token is the auto-burning f
 1. Burning a portion of gas fees spent with BNB on the BNB Chain
 2. Quarterly BNB burning events
 
-A short example of BNB burning from Etherscan can be found [here] (https://etherscan.io/token/0xB8c77482e45F1F44dE1745F52C74426C631bDD52#code), I have pulled an excerpt showing the specific burning process:
+A short example of BNB burning from Etherscan can be found [here](https://etherscan.io/token/0xB8c77482e45F1F44dE1745F52C74426C631bDD52#code), I have pulled an excerpt showing the specific burning process:
 
 ```
-    function burn(uint256 _value) returns (bool success) {
-        if (balanceOf[msg.sender] < _value) throw;            // Check if the sender has enough
+function burn(uint256 _value) returns (bool success) {
+	if (balanceOf[msg.sender] < _value) throw;            // Check if the sender has enough
 		if (_value <= 0) throw; 
         balanceOf[msg.sender] = SafeMath.safeSub(balanceOf[msg.sender], _value);                      // Subtract from the sender
         totalSupply = SafeMath.safeSub(totalSupply,_value);                                // Updates totalSupply
