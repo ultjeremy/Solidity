@@ -5,3 +5,8 @@ In this GitHub project, I am exploring various well-known and real-world tokens 
 ## Binance (BNB):
 
 Binance utilizes smart contracts with their BNB Smart Chain to facilitate the building of dApps to allow developers to create projects taking advantage of the benefits that the BNB token provides. The BNB Smart Chain utilizes the BEP-20 token standard, which is very similar to the ERC-20 standard. The standard acts like a guide and blueprint for how to utilize the BEP-20 standard.
+
+BNB transactions largely operate with on-chain logic, where transactions are recorded on the BNB chain and executed by smart contracts directly on the chain. This follows from the fact that BNB is the native currency on the Binance Exchange, powering transactions and paying for fees.
+
+BNB can be interacted with through smart contracts that allow many transactions to occur, providing many benefits to users. I coded a small example of a smart contract through Solidity of transfering tokens, which can be used for transfering BNB, Ether, and more across accounts. 
+
