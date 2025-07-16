@@ -69,4 +69,17 @@ In this example, a `burn` function can be called that removes an inputted amount
 
 A large part of the Binance Exchange is also the Binance API. Through its utilization, users can easily fetch information on various crypto currencies, and even create automated trading programs to have bots make trades on behalf of the trader.
 
-One good method for working with the Binance API is through the python library `python-binance`. I will now go through a walkhrough of the 
+One good method for working with the Binance API is through the python library `python-binance`. A simple example checking the latest price of Bitcoin is shown:
+
+```
+btc_price = client.get_symbol_ticker(symbol="BTCUSDT")
+print(btc_price)
+```
+
+This block of code queries the Binance API to find and retrieve the latest price of Bitcoin. An example output:
+
+```
+{'symbol': 'BTCUSDT', 'price': '117,623.40'}
+```
+
+This output is formatted as an easily accessible python dictionary. The API can also access past Bitcoin values and many other crypto currencies, allowing the automation of stock trading to be easily implemented using the Binance API.
