@@ -64,3 +64,9 @@ function burn(uint256 _value) returns (bool success) {
 ```
 
 In this example, a `burn` function can be called that removes an inputted amount of BNB from the caller's account, updating the total supply and returning whether the operation was successful or not. This is again implemented with Solidity as a smart contract.
+
+### Binance API:
+
+A large part of the Binance Exchange is also the Binance API. Through its utilization, users can easily fetch information on various crypto currencies, and even create automated trading programs to have bots make trades on behalf of the trader.
+
+One good method for working with the Binance API is through the python library `python-binance`. I will now go through a walkhrough of the 
